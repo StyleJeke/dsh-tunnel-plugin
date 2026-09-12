@@ -1,0 +1,22 @@
+{
+  "name": "dsh-tunnel-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DSH 内网穿透：边界代理 + Cloudflare 隧道，在设置里一键启停，把本机 DSH 安全发布到公网",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

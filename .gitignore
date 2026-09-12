@@ -1,0 +1,27 @@
+# 依赖
+node_modules/
+
+# 运行时配置：里面可能有账号摘要与会话密钥，绝不入库
+*.credentials.yaml
+credentials.json
+named-tunnel.json
+gate-key
+autostart
+
+# Cloudflare 凭据
+*.pem
+*.cfargotunnel.com.json
+
+# 探针产生的临时物
+*.log
+*.out
+*.err
+.probe-*
+.diag-*
+.check-*
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
